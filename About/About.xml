@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Multilopes Expanded</name>
+	<author>DrTinyFace</author>
+	<supportedVersions>
+		<li>1.1</li>
+		<li>1.2</li>
+		<li>1.3</li>
+	</supportedVersions>
+	<loadAfter>
+		<li>lbeaston.ADogSaidEasyPatcher</li>
+	</loadAfter>
+	<description>
+Inspired by the Multilopes mod, Multilopes Expanded adds 5 new variants of boomalope to the game that can be milked for various resources.
+
+5 variants currently exist: the woodalope, the hyperlope, the ambrolope, the jadalope, and the luciferilope. More versions will be added in future updates.
+
+This mod is a complete standalone, but does *not* add the boomalope variants added in Multilopes as of yet. If you'd like to add those creatures, I'd recommend installing the main mod.
+
+This mod is also A Dog Said compatible if you're using A Dog Said Easy Patcher. Load this mod after that one.
+
+Finally, if you'd like to add your own boomalope variants, I've included .ase files with the base textures I use for the mod. Simply copy and paste one of the existing defs, and make changes as needed.
+	</description>
+	<url></url>
+	<packageId>DrTinyFace.Multilopes.MultilopesExtended</packageId>
+</ModMetaData>
+

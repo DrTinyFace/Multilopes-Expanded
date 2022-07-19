@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="Baselope">
+		<defName>Hyperlope</defName>
+		<label>hyperlope</label>
+		<description>Engineered for chemicals production, the hyperlope grows a large sac of volatile chemicals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce hyperweave - very carefully.</description>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Hyperweave</milkDef>
+				<milkIntervalDays>6</milkIntervalDays>
+				<milkAmount>6</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaselopeKind">
+		<defName>Hyperlope</defName>
+		<label>hyperlope</label>
+		<race>Hyperlope</race>
+		<lifeStages>
+			<li>
+				<label>hyperlope calf</label>
+				<labelPlural>hyperlope calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Animal/Hyperlope</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Deadlope</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Hyperlope</texPath>
+					<drawSize>1.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Deadlope</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Hyperlope</texPath>
+					<drawSize>2.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Deadlope</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

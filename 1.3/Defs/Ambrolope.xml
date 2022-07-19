@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="Baselope">
+		<defName>Ambrolope</defName>
+		<label>ambrolope</label>
+		<description>Engineered for chemicals production, the ambrolope grows a large sac of volatile chemicals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce ambrosia - very carefully.</description>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Ambrosia</milkDef>
+				<milkIntervalDays>8</milkIntervalDays>
+				<milkAmount>4</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+		<race>
+			<wildness>0.9</wildness>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaselopeKind">
+		<defName>Ambrolope</defName>
+		<label>ambrolope</label>
+		<race>Ambrolope</race>
+		<lifeStages>
+			<li>
+				<label>ambrolope calf</label>
+				<labelPlural>ambrolope calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Animal/Ambrolope</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Deadlope</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Ambrolope</texPath>
+					<drawSize>1.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Deadlope</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Ambrolope</texPath>
+					<drawSize>2.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Deadlope</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>
