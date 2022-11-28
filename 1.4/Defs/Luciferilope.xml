@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="Baselope">
+		<!--Basics/-->
+		<defName>Luciferilope</defName>
+		<label>luciferilope</label>
+		<description>The last-ditch effort of a scientist gone mad from addiction, the luciferilope grows a large sac of volatile, intoxicating chemicals on its back. Unlike other boomalope variants, the luciferilope is much more aggressive and durable, likely due to the luciferium coarsing through its veins. It also has a much larger explosion compared to others of its species. It can be milked to produce luciferium - very carefully.</description>
+		<!--/Basics/-->
+		<statBases>
+			<MoveSpeed>6.4</MoveSpeed>
+			<MarketValue>1250</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<!--Products/-->
+				<milkDef>Luciferium</milkDef>
+				<milkIntervalDays>10</milkIntervalDays>
+				<milkAmount>1</milkAmount>
+				<!--/Products/-->
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+		<race>
+			<executionRange>10</executionRange>
+			<baseHungerRate>0.535</baseHungerRate>
+			<baseHealthScale>1.65</baseHealthScale>
+			<wildness>0.95</wildness>
+			<manhunterOnDamageChance>0.99</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
+			<lifeExpectancy>30</lifeExpectancy>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaselopeKind">
+		<!--Base Names/-->
+		<defName>Luciferilope</defName>
+		<label>luciferilope</label>
+		<race>Luciferilope</race>
+		<!--/Base Names/-->
+		<combatPower>160</combatPower>
+		<wildGroupSize>1~2</wildGroupSize>
+		<lifeStages>
+			<li>
+				<!--Calf Names/-->
+				<label>luciferilope calf</label>
+				<labelPlural>luciferilope calves</labelPlural>
+				<!--/Calf Names/-->
+				<bodyGraphicData>
+					<!---texture-->
+					<texPath>Animal/Luciferilope</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Deadlope</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<!---texture-->
+					<texPath>Animal/Luciferilope</texPath>
+					<drawSize>1.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Deadlope</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<!---texture-->
+					<texPath>Animal/Luciferilope</texPath>
+					<drawSize>2.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Deadlope</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="Baselope" ParentName="AnimalThingBase" ADogSaidBody="Legs" Abstract="True">
+		<description>This is bugged.</description>
+		<statBases>
+			<MoveSpeed>3.4</MoveSpeed>
+			<MarketValue>350</MarketValue>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<FilthRate>16</FilthRate>
+		</statBases>
+		<race>
+			<meatLabel>boomalope meat</meatLabel>
+			<body>QuadrupedAnimalWithHoovesAndHump</body>
+			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+			<executionRange>6</executionRange>
+			<herdAnimal>true</herdAnimal>
+			<baseBodySize>2.0</baseBodySize>
+			<baseHungerRate>0.535</baseHungerRate>
+			<baseHealthScale>0.65</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<leatherDef>Leather_Plain</leatherDef>
+			<wildness>0.6</wildness>
+			<roamMtbDays>2</roamMtbDays>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<gestationPeriodDays>6.66</gestationPeriodDays>
+			<trainability>None</trainability>
+			<manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+			<lifeExpectancy>15</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.3333</minAge>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<!--Rarity/-->
+			<li>AnimalUncommon</li>
+			<!--/Rarity/-->
+			<li>AnimalFighter</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+			<li>
+				<label>left hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase" Name="BaselopeKind" Abstract="True">
+		<combatPower>80</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>3~6</wildGroupSize>
+	</PawnKindDef>
+</Defs>

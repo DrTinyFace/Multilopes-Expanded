@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="Baselope">
+		<defName>Jadalope</defName>
+		<label>jadalope</label>
+		<description>Engineered for chemicals production, the jadalope grows a large sac of volatile chemicals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce jade - very carefully.</description>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Jade</milkDef>
+				<milkIntervalDays>4</milkIntervalDays>
+				<milkAmount>7</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaselopeKind">
+		<defName>Jadalope</defName>
+		<label>jadalope</label>
+		<race>Jadalope</race>
+		<lifeStages>
+			<li>
+				<label>jadalope calf</label>
+				<labelPlural>jadalope calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Animal/Jadalope</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Deadlope</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Jadalope</texPath>
+					<drawSize>1.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Deadlope</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Jadalope</texPath>
+					<drawSize>2.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Deadlope</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>
