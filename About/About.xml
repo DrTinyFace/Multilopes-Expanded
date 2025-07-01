@@ -3,26 +3,22 @@
 	<name>Multilopes Expanded</name>
 	<author>DrTinyFace</author>
 	<supportedVersions>
-		<li>1.1</li>
-		<li>1.2</li>
-		<li>1.3</li>
-		<li>1.4</li>
+		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
-	<loadAfter>
-		<li>lbeaston.ADogSaidEasyPatcher</li>
-	</loadAfter>
 	<description>
-Inspired by the Multilopes mod, Multilopes Expanded adds 5 new variants of boomalope to the game that can be milked for various resources.
+[h1]Multilopes Expanded[/h1]
+A spiritual successor to the Multilopes mod, Multilopes Expanded adds brand new variants of the boomalope to the game that can be milked for various resources.
 
-5 variants currently exist: the woodalope, the hyperlope, the ambrolope, the jadalope, and the luciferilope. More versions will be added in future updates.
+[h3]Features[/h3]
+5 boomalope variants currently exist in this mod, each with their own generated resource: the woodalope (wood), the hyperlope (hyperweave), the ambrolope (ambrosia), the jadalope (jade), and the luciferilope (luciferium). They can be found in trades and anywhere else you could find a traditional boomalope, though they're about half as common.
 
-This mod is a complete standalone, but does *not* add the boomalope variants added in Multilopes as of yet. If you'd like to add those creatures, I'd recommend installing the main mod.
+[h3]What's Next?[/h3]
+This mod is being updated after a long period of inactivity in preparation for 1.6. I will be adding cross-compatibility with a lot more mods, along with incorporating the original Multilopes' lopes into this mod (with my own code, of course). Multilopes should already be compatible with 1.6. I will be adding specific biome compatibility when 1.6 and Odyssey officially release.
 
-This mod is also A Dog Said compatible if you're using A Dog Said Easy Patcher. Load this mod after that one.
-
-Finally, if you'd like to add your own boomalope variants, I've included .ase files with the base textures I use for the mod. Simply copy and paste one of the existing defs, and make changes as needed.
+[h3]What Happened to the Old Multilopes Expanded?[/h3]
+Official support has unfortunately ended for versions 1.1-1.4. They're just too old for me to support anymore, and the code was absolute spaghetti. Going forward, all versions should maintain support permanently (without content updates), as I cleaned up the old code as much as possible and shouldn't need to make any major changes to keep it running. If you really want to play around with the old code, I have it available on my [url=https://github.com/DrTinyFace/Multilopes-Expanded]GitHub[/url], feel free to do whatever with it.
 	</description>
 	<url></url>
-	<packageId>DrTinyFace.Multilopes.MultilopesExtended</packageId>
+	<packageId>dtf.MultilopesExpanded</packageId>
 </ModMetaData>
-

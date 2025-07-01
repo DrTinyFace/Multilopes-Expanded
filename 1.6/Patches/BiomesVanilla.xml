@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Temperate Forest -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="TemperateForest"]/wildAnimals</xpath>
+		<value>
+			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Hyperlope>.2</dtf_Hyperlope>
+			<dtf_Jadalope>.2</dtf_Jadalope>
+			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Woodalope>.3</dtf_Woodalope>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+		<xpath>Defs/BiomeDef[defName="TemperateForest"]/pollutionWildAnimals</xpath>
+		<value>
+			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Hyperlope>.2</dtf_Hyperlope>
+			<dtf_Jadalope>.2</dtf_Jadalope>
+			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Woodalope>.3</dtf_Woodalope>
+		</value>
+	</Operation>
+	
+	<!-- Temperate Swamp -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="TemperateSwamp"]/wildAnimals</xpath>
+		<value>
+			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Hyperlope>.2</dtf_Hyperlope>
+			<dtf_Jadalope>.2</dtf_Jadalope>
+			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Woodalope>.3</dtf_Woodalope>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+		<xpath>Defs/BiomeDef[defName="TemperateSwamp"]/pollutionWildAnimals</xpath>
+		<value>
+			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Hyperlope>.2</dtf_Hyperlope>
+			<dtf_Jadalope>.2</dtf_Jadalope>
+			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Woodalope>.3</dtf_Woodalope>
+		</value>
+	</Operation>
+	
+	<!-- Tropical Rainforest -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="TropicalRainforest"]/wildAnimals</xpath>
+		<value>
+			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Hyperlope>.2</dtf_Hyperlope>
+			<dtf_Jadalope>.2</dtf_Jadalope>
+			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Woodalope>.3</dtf_Woodalope>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+		<xpath>Defs/BiomeDef[defName="TropicalRainforest"]/pollutionWildAnimals</xpath>
+		<value>
+			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Hyperlope>.2</dtf_Hyperlope>
+			<dtf_Jadalope>.2</dtf_Jadalope>
+			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Woodalope>.3</dtf_Woodalope>
+		</value>
+	</Operation>
+	
+	<!-- Tropical Swamp -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="TropicalSwamp"]/wildAnimals</xpath>
+		<value>
+			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Hyperlope>.2</dtf_Hyperlope>
+			<dtf_Jadalope>.2</dtf_Jadalope>
+			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Woodalope>.3</dtf_Woodalope>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+		<xpath>Defs/BiomeDef[defName="TropicalSwamp"]/pollutionWildAnimals</xpath>
+		<value>
+			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Hyperlope>.2</dtf_Hyperlope>
+			<dtf_Jadalope>.2</dtf_Jadalope>
+			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Woodalope>.3</dtf_Woodalope>
+		</value>
+	</Operation>
+	
+	<!-- Arid Shrubland -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="AridShrubland"]/wildAnimals</xpath>
+		<value>
+			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Hyperlope>.2</dtf_Hyperlope>
+			<dtf_Jadalope>.2</dtf_Jadalope>
+			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Woodalope>.3</dtf_Woodalope>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+		<xpath>Defs/BiomeDef[defName="AridShrubland"]/pollutionWildAnimals</xpath>
+		<value>
+			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Hyperlope>.2</dtf_Hyperlope>
+			<dtf_Jadalope>.2</dtf_Jadalope>
+			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Woodalope>.3</dtf_Woodalope>
+		</value>
+	</Operation>
+	
+	<!-- Desert -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="Desert"]/wildAnimals</xpath>
+		<value>
+			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Hyperlope>.2</dtf_Hyperlope>
+			<dtf_Jadalope>.2</dtf_Jadalope>
+			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Woodalope>.3</dtf_Woodalope>
+		</value>
+	</Operation>
+</Patch>
