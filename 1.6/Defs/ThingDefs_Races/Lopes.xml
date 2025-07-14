@@ -27,6 +27,23 @@
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>0.1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+			<canCrossBreedWith>
+				<li>Boomalope</li>
+				<li>dtf_Ambrolope</li>
+				<li>dtf_Hyperlope</li>
+				<li>dtf_Jadalope</li>
+				<li>dtf_Luciferilope</li>
+				<li>dtf_Woodalope</li>
+			</canCrossBreedWith>
+			<crossAggroWith>
+				<li>Boomalope</li>
+				<li>dtf_Ambrolope</li>
+				<li>dtf_Hyperlope</li>
+				<li>dtf_Jadalope</li>
+				<li>dtf_Luciferilope</li>
+				<li>dtf_Woodalope</li>
+			</crossAggroWith>
+			<manhunterPackUseLabelFrom>Boomalope</manhunterPackUseLabelFrom>
 			<lifeExpectancy>15</lifeExpectancy>
 			<lifeStageAges>
 				<li>
