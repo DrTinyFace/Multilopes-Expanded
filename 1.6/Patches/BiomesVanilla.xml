@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+	<!-- Base Game ***** -->
 	<!-- Temperate Forest -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/BiomeDef[defName="TemperateForest"]/wildAnimals</xpath>
 		<value>
 			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Goldilope>.2</dtf_Goldilope>
 			<dtf_Hyperlope>.2</dtf_Hyperlope>
 			<dtf_Jadalope>.2</dtf_Jadalope>
 			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Neutrolope>.2</dtf_Neutrolope>
+			<dtf_Plasteelope>.2</dtf_Plasteelope>
+			<dtf_Steelope>.3</dtf_Steelope>
+			<dtf_Uranilope>.2</dtf_Uranilope>
 			<dtf_Woodalope>.3</dtf_Woodalope>
 		</value>
 	</Operation>
@@ -15,9 +21,14 @@
 		<xpath>Defs/BiomeDef[defName="TemperateForest"]/pollutionWildAnimals</xpath>
 		<value>
 			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Goldilope>.2</dtf_Goldilope>
 			<dtf_Hyperlope>.2</dtf_Hyperlope>
 			<dtf_Jadalope>.2</dtf_Jadalope>
 			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Neutrolope>.2</dtf_Neutrolope>
+			<dtf_Plasteelope>.2</dtf_Plasteelope>
+			<dtf_Steelope>.3</dtf_Steelope>
+			<dtf_Uranilope>.2</dtf_Uranilope>
 			<dtf_Woodalope>.3</dtf_Woodalope>
 		</value>
 	</Operation>
@@ -27,9 +38,14 @@
 		<xpath>Defs/BiomeDef[defName="TemperateSwamp"]/wildAnimals</xpath>
 		<value>
 			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Goldilope>.2</dtf_Goldilope>
 			<dtf_Hyperlope>.2</dtf_Hyperlope>
 			<dtf_Jadalope>.2</dtf_Jadalope>
 			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Neutrolope>.2</dtf_Neutrolope>
+			<dtf_Plasteelope>.2</dtf_Plasteelope>
+			<dtf_Steelope>.3</dtf_Steelope>
+			<dtf_Uranilope>.2</dtf_Uranilope>
 			<dtf_Woodalope>.3</dtf_Woodalope>
 		</value>
 	</Operation>
@@ -37,9 +53,14 @@
 		<xpath>Defs/BiomeDef[defName="TemperateSwamp"]/pollutionWildAnimals</xpath>
 		<value>
 			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Goldilope>.2</dtf_Goldilope>
 			<dtf_Hyperlope>.2</dtf_Hyperlope>
 			<dtf_Jadalope>.2</dtf_Jadalope>
 			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Neutrolope>.2</dtf_Neutrolope>
+			<dtf_Plasteelope>.2</dtf_Plasteelope>
+			<dtf_Steelope>.3</dtf_Steelope>
+			<dtf_Uranilope>.2</dtf_Uranilope>
 			<dtf_Woodalope>.3</dtf_Woodalope>
 		</value>
 	</Operation>
@@ -49,9 +70,14 @@
 		<xpath>Defs/BiomeDef[defName="TropicalRainforest"]/wildAnimals</xpath>
 		<value>
 			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Goldilope>.2</dtf_Goldilope>
 			<dtf_Hyperlope>.2</dtf_Hyperlope>
 			<dtf_Jadalope>.2</dtf_Jadalope>
 			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Neutrolope>.2</dtf_Neutrolope>
+			<dtf_Plasteelope>.2</dtf_Plasteelope>
+			<dtf_Steelope>.3</dtf_Steelope>
+			<dtf_Uranilope>.2</dtf_Uranilope>
 			<dtf_Woodalope>.3</dtf_Woodalope>
 		</value>
 	</Operation>
@@ -59,9 +85,14 @@
 		<xpath>Defs/BiomeDef[defName="TropicalRainforest"]/pollutionWildAnimals</xpath>
 		<value>
 			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Goldilope>.2</dtf_Goldilope>
 			<dtf_Hyperlope>.2</dtf_Hyperlope>
 			<dtf_Jadalope>.2</dtf_Jadalope>
 			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Neutrolope>.2</dtf_Neutrolope>
+			<dtf_Plasteelope>.2</dtf_Plasteelope>
+			<dtf_Steelope>.3</dtf_Steelope>
+			<dtf_Uranilope>.2</dtf_Uranilope>
 			<dtf_Woodalope>.3</dtf_Woodalope>
 		</value>
 	</Operation>
@@ -71,9 +102,14 @@
 		<xpath>Defs/BiomeDef[defName="TropicalSwamp"]/wildAnimals</xpath>
 		<value>
 			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Goldilope>.2</dtf_Goldilope>
 			<dtf_Hyperlope>.2</dtf_Hyperlope>
 			<dtf_Jadalope>.2</dtf_Jadalope>
 			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Neutrolope>.2</dtf_Neutrolope>
+			<dtf_Plasteelope>.2</dtf_Plasteelope>
+			<dtf_Steelope>.3</dtf_Steelope>
+			<dtf_Uranilope>.2</dtf_Uranilope>
 			<dtf_Woodalope>.3</dtf_Woodalope>
 		</value>
 	</Operation>
@@ -81,9 +117,14 @@
 		<xpath>Defs/BiomeDef[defName="TropicalSwamp"]/pollutionWildAnimals</xpath>
 		<value>
 			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Goldilope>.2</dtf_Goldilope>
 			<dtf_Hyperlope>.2</dtf_Hyperlope>
 			<dtf_Jadalope>.2</dtf_Jadalope>
 			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Neutrolope>.2</dtf_Neutrolope>
+			<dtf_Plasteelope>.2</dtf_Plasteelope>
+			<dtf_Steelope>.3</dtf_Steelope>
+			<dtf_Uranilope>.2</dtf_Uranilope>
 			<dtf_Woodalope>.3</dtf_Woodalope>
 		</value>
 	</Operation>
@@ -93,9 +134,14 @@
 		<xpath>Defs/BiomeDef[defName="AridShrubland"]/wildAnimals</xpath>
 		<value>
 			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Goldilope>.2</dtf_Goldilope>
 			<dtf_Hyperlope>.2</dtf_Hyperlope>
 			<dtf_Jadalope>.2</dtf_Jadalope>
 			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Neutrolope>.2</dtf_Neutrolope>
+			<dtf_Plasteelope>.2</dtf_Plasteelope>
+			<dtf_Steelope>.3</dtf_Steelope>
+			<dtf_Uranilope>.2</dtf_Uranilope>
 			<dtf_Woodalope>.3</dtf_Woodalope>
 		</value>
 	</Operation>
@@ -103,9 +149,14 @@
 		<xpath>Defs/BiomeDef[defName="AridShrubland"]/pollutionWildAnimals</xpath>
 		<value>
 			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Goldilope>.2</dtf_Goldilope>
 			<dtf_Hyperlope>.2</dtf_Hyperlope>
 			<dtf_Jadalope>.2</dtf_Jadalope>
 			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Neutrolope>.2</dtf_Neutrolope>
+			<dtf_Plasteelope>.2</dtf_Plasteelope>
+			<dtf_Steelope>.3</dtf_Steelope>
+			<dtf_Uranilope>.2</dtf_Uranilope>
 			<dtf_Woodalope>.3</dtf_Woodalope>
 		</value>
 	</Operation>
@@ -115,10 +166,188 @@
 		<xpath>Defs/BiomeDef[defName="Desert"]/wildAnimals</xpath>
 		<value>
 			<dtf_Ambrolope>.1</dtf_Ambrolope>
+			<dtf_Goldilope>.2</dtf_Goldilope>
 			<dtf_Hyperlope>.2</dtf_Hyperlope>
 			<dtf_Jadalope>.2</dtf_Jadalope>
 			<dtf_Luciferilope>.1</dtf_Luciferilope>
+			<dtf_Neutrolope>.2</dtf_Neutrolope>
+			<dtf_Plasteelope>.2</dtf_Plasteelope>
+			<dtf_Steelope>.3</dtf_Steelope>
+			<dtf_Uranilope>.2</dtf_Uranilope>
 			<dtf_Woodalope>.3</dtf_Woodalope>
 		</value>
+	</Operation>
+	
+	<!-- Odyssey ***** -->
+	<!-- Glowforest -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BiomeDef[defName="Glowforest"]/wildAnimals</xpath>
+			<value>
+				<dtf_Ambrolope>.1</dtf_Ambrolope>
+				<dtf_Goldilope>.2</dtf_Goldilope>
+				<dtf_Hyperlope>.2</dtf_Hyperlope>
+				<dtf_Jadalope>.2</dtf_Jadalope>
+				<dtf_Luciferilope>.1</dtf_Luciferilope>
+				<dtf_Neutrolope>.2</dtf_Neutrolope>
+				<dtf_Plasteelope>.2</dtf_Plasteelope>
+				<dtf_Steelope>.3</dtf_Steelope>
+				<dtf_Uranilope>.2</dtf_Uranilope>
+				<dtf_Woodalope>.3</dtf_Woodalope>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BiomeDef[defName="Glowforest"]/pollutionWildAnimals</xpath>
+			<value>
+				<dtf_Ambrolope>.1</dtf_Ambrolope>
+				<dtf_Goldilope>.2</dtf_Goldilope>
+				<dtf_Hyperlope>.2</dtf_Hyperlope>
+				<dtf_Jadalope>.2</dtf_Jadalope>
+				<dtf_Luciferilope>.1</dtf_Luciferilope>
+				<dtf_Neutrolope>.2</dtf_Neutrolope>
+				<dtf_Plasteelope>.2</dtf_Plasteelope>
+				<dtf_Steelope>.3</dtf_Steelope>
+				<dtf_Uranilope>.2</dtf_Uranilope>
+				<dtf_Woodalope>.3</dtf_Woodalope>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- Grasslands -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BiomeDef[defName="Grasslands"]/wildAnimals</xpath>
+			<value>
+				<dtf_Ambrolope>.1</dtf_Ambrolope>
+				<dtf_Goldilope>.2</dtf_Goldilope>
+				<dtf_Hyperlope>.2</dtf_Hyperlope>
+				<dtf_Jadalope>.2</dtf_Jadalope>
+				<dtf_Luciferilope>.1</dtf_Luciferilope>
+				<dtf_Neutrolope>.2</dtf_Neutrolope>
+				<dtf_Plasteelope>.2</dtf_Plasteelope>
+				<dtf_Steelope>.3</dtf_Steelope>
+				<dtf_Uranilope>.2</dtf_Uranilope>
+				<dtf_Woodalope>.3</dtf_Woodalope>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BiomeDef[defName="Grasslands"]/pollutionWildAnimals</xpath>
+			<value>
+				<dtf_Ambrolope>.1</dtf_Ambrolope>
+				<dtf_Goldilope>.2</dtf_Goldilope>
+				<dtf_Hyperlope>.2</dtf_Hyperlope>
+				<dtf_Jadalope>.2</dtf_Jadalope>
+				<dtf_Luciferilope>.1</dtf_Luciferilope>
+				<dtf_Neutrolope>.2</dtf_Neutrolope>
+				<dtf_Plasteelope>.2</dtf_Plasteelope>
+				<dtf_Steelope>.3</dtf_Steelope>
+				<dtf_Uranilope>.2</dtf_Uranilope>
+				<dtf_Woodalope>.3</dtf_Woodalope>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- Lava Field -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BiomeDef[defName="LavaField"]/wildAnimals</xpath>
+			<value>
+				<dtf_Ambrolope>.1</dtf_Ambrolope>
+				<dtf_Goldilope>.2</dtf_Goldilope>
+				<dtf_Hyperlope>.2</dtf_Hyperlope>
+				<dtf_Jadalope>.2</dtf_Jadalope>
+				<dtf_Luciferilope>.1</dtf_Luciferilope>
+				<dtf_Neutrolope>.2</dtf_Neutrolope>
+				<dtf_Plasteelope>.2</dtf_Plasteelope>
+				<dtf_Steelope>.3</dtf_Steelope>
+				<dtf_Uranilope>.2</dtf_Uranilope>
+				<dtf_Woodalope>.3</dtf_Woodalope>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BiomeDef[defName="LavaField"]/pollutionWildAnimals</xpath>
+			<value>
+				<dtf_Ambrolope>.1</dtf_Ambrolope>
+				<dtf_Goldilope>.2</dtf_Goldilope>
+				<dtf_Hyperlope>.2</dtf_Hyperlope>
+				<dtf_Jadalope>.2</dtf_Jadalope>
+				<dtf_Luciferilope>.1</dtf_Luciferilope>
+				<dtf_Neutrolope>.2</dtf_Neutrolope>
+				<dtf_Plasteelope>.2</dtf_Plasteelope>
+				<dtf_Steelope>.3</dtf_Steelope>
+				<dtf_Uranilope>.2</dtf_Uranilope>
+				<dtf_Woodalope>.3</dtf_Woodalope>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- Scarlands -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BiomeDef[defName="Scarlands"]/wildAnimals</xpath>
+			<value>
+				<dtf_Ambrolope>.1</dtf_Ambrolope>
+				<dtf_Goldilope>.2</dtf_Goldilope>
+				<dtf_Hyperlope>.2</dtf_Hyperlope>
+				<dtf_Jadalope>.2</dtf_Jadalope>
+				<dtf_Luciferilope>.1</dtf_Luciferilope>
+				<dtf_Neutrolope>.2</dtf_Neutrolope>
+				<dtf_Plasteelope>.2</dtf_Plasteelope>
+				<dtf_Steelope>.3</dtf_Steelope>
+				<dtf_Uranilope>.2</dtf_Uranilope>
+				<dtf_Woodalope>.3</dtf_Woodalope>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BiomeDef[defName="Scarlands"]/pollutionWildAnimals</xpath>
+			<value>
+				<dtf_Ambrolope>.1</dtf_Ambrolope>
+				<dtf_Goldilope>.2</dtf_Goldilope>
+				<dtf_Hyperlope>.2</dtf_Hyperlope>
+				<dtf_Jadalope>.2</dtf_Jadalope>
+				<dtf_Luciferilope>.1</dtf_Luciferilope>
+				<dtf_Neutrolope>.2</dtf_Neutrolope>
+				<dtf_Plasteelope>.2</dtf_Plasteelope>
+				<dtf_Steelope>.3</dtf_Steelope>
+				<dtf_Uranilope>.2</dtf_Uranilope>
+				<dtf_Woodalope>.3</dtf_Woodalope>
+			</value>
+		</match>
 	</Operation>
 </Patch>

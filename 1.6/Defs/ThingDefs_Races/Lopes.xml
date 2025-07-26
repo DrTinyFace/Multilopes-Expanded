@@ -11,9 +11,11 @@
 			<Wildness>0.6</Wildness>
 		</statBases>
 		<race>
-			<useMeatFrom>boomalope</useMeatFrom>
+			<useMeatFrom>Boomalope</useMeatFrom>
 			<body>QuadrupedAnimalWithHoovesAndHump</body>
-			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+			<deathAction>
+				<workerClass>DeathActionWorker_BigExplosion</workerClass>
+			</deathAction>
 			<executionRange>6</executionRange>
 			<herdAnimal>true</herdAnimal>
 			<baseBodySize>2.0</baseBodySize>
@@ -30,18 +32,30 @@
 			<canCrossBreedWith>
 				<li>Boomalope</li>
 				<li>dtf_Ambrolope</li>
+				<li>dtf_Goldilope</li>
 				<li>dtf_Hyperlope</li>
 				<li>dtf_Jadalope</li>
+				<li>dtf_Neutrolope</li>
 				<li>dtf_Luciferilope</li>
+				<li>dtf_Plasteelope</li>
+				<li>dtf_Steelope</li>
+				<li>dtf_Uranilope</li>
 				<li>dtf_Woodalope</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Toxalope</li>
 			</canCrossBreedWith>
 			<crossAggroWith>
 				<li>Boomalope</li>
 				<li>dtf_Ambrolope</li>
+				<li>dtf_Goldilope</li>
 				<li>dtf_Hyperlope</li>
 				<li>dtf_Jadalope</li>
+				<li>dtf_Neutrolope</li>
 				<li>dtf_Luciferilope</li>
+				<li>dtf_Plasteelope</li>
+				<li>dtf_Steelope</li>
+				<li>dtf_Uranilope</li>
 				<li>dtf_Woodalope</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Toxalope</li>
 			</crossAggroWith>
 			<manhunterPackUseLabelFrom>Boomalope</manhunterPackUseLabelFrom>
 			<lifeExpectancy>15</lifeExpectancy>
@@ -121,8 +135,8 @@
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Ambrosia</milkDef>
-				<milkIntervalDays>8</milkIntervalDays>
-				<milkAmount>4</milkAmount>
+				<milkIntervalDays>6</milkIntervalDays>
+				<milkAmount>6</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 		</comps>
@@ -198,6 +212,88 @@
 		</lifeStages>
 	</PawnKindDef>
 	
+	<!-- Goldilope -->
+	<ThingDef ParentName="dtf_LopeBase">
+		<defName>dtf_Goldilope</defName>
+		<label>goldilope</label>
+		<description>Engineered for chemicals production, the goldilope grows a large sac of volatile chemicals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce gold - very carefully.</description>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Gold</milkDef>
+				<milkIntervalDays>5</milkIntervalDays>
+				<milkAmount>8</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="dtf_LopeBaseKind">
+		<defName>dtf_Goldilope</defName>
+		<label>goldilope</label>
+		<race>dtf_Goldilope</race>
+		<lifeStages>
+			<li>
+				<label>goldilope calf</label>
+				<labelPlural>goldilope calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Animal/Goldilope</texPath>
+					<drawSize>1.0</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>1.0</drawSize>
+				</corpseGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Goldilope</texPath>
+					<drawSize>1.6</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>1.5</drawSize>
+				</corpseGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Goldilope</texPath>
+					<drawSize>2.2</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>2.0</drawSize>
+				</corpseGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
 	<!-- Hyperlope -->
 	<ThingDef ParentName="dtf_LopeBase">
 		<defName>dtf_Hyperlope</defName>
@@ -207,7 +303,7 @@
 			<li Class="CompProperties_Milkable">
 				<milkDef>Hyperweave</milkDef>
 				<milkIntervalDays>6</milkIntervalDays>
-				<milkAmount>6</milkAmount>
+				<milkAmount>16</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 		</comps>
@@ -288,8 +384,8 @@
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Jade</milkDef>
-				<milkIntervalDays>4</milkIntervalDays>
-				<milkAmount>7</milkAmount>
+				<milkIntervalDays>5</milkIntervalDays>
+				<milkAmount>16</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 		</comps>
@@ -374,7 +470,7 @@
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Luciferium</milkDef>
-				<milkIntervalDays>10</milkIntervalDays>
+				<milkIntervalDays>6</milkIntervalDays>
 				<milkAmount>1</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
@@ -441,6 +537,334 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/Luciferilope</texPath>
+					<drawSize>2.2</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>2.0</drawSize>
+				</corpseGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<!-- Neutrolope -->
+	<ThingDef ParentName="dtf_LopeBase">
+		<defName>dtf_Neutrolope</defName>
+		<label>neutrolope</label>
+		<description>Engineered for chemicals production, the neutrolope grows a large sac of volatile chemicals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce neutroamine - very carefully.</description>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Neutroamine</milkDef>
+				<milkIntervalDays>4</milkIntervalDays>
+				<milkAmount>16</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="dtf_LopeBaseKind">
+		<defName>dtf_Neutrolope</defName>
+		<label>neutrolope</label>
+		<race>dtf_Neutrolope</race>
+		<lifeStages>
+			<li>
+				<label>neutrolope calf</label>
+				<labelPlural>neutrolope calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Animal/Neutrolope</texPath>
+					<drawSize>1.0</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>1.0</drawSize>
+				</corpseGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Neutrolope</texPath>
+					<drawSize>1.6</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>1.5</drawSize>
+				</corpseGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Neutrolope</texPath>
+					<drawSize>2.2</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>2.0</drawSize>
+				</corpseGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<!-- Plasteelope -->
+	<ThingDef ParentName="dtf_LopeBase">
+		<defName>dtf_Plasteelope</defName>
+		<label>plasteelope</label>
+		<description>Engineered for chemicals production, the plasteelope grows a large sac of volatile chemicals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce plasteel - very carefully.</description>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Plasteel</milkDef>
+				<milkIntervalDays>5</milkIntervalDays>
+				<milkAmount>12</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="dtf_LopeBaseKind">
+		<defName>dtf_Plasteelope</defName>
+		<label>plasteelope</label>
+		<race>dtf_Plasteelope</race>
+		<lifeStages>
+			<li>
+				<label>plasteelope calf</label>
+				<labelPlural>plasteelope calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Animal/Plasteelope</texPath>
+					<drawSize>1.0</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>1.0</drawSize>
+				</corpseGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Plasteelope</texPath>
+					<drawSize>1.6</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>1.5</drawSize>
+				</corpseGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Plasteelope</texPath>
+					<drawSize>2.2</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>2.0</drawSize>
+				</corpseGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<!-- Steelope -->
+	<ThingDef ParentName="dtf_LopeBase">
+		<defName>dtf_Steelope</defName>
+		<label>steelope</label>
+		<description>Engineered for chemicals production, the steelope grows a large sac of volatile chemicals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce steel - very carefully.</description>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Steel</milkDef>
+				<milkIntervalDays>1</milkIntervalDays>
+				<milkAmount>16</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="dtf_LopeBaseKind">
+		<defName>dtf_Steelope</defName>
+		<label>steelope</label>
+		<race>dtf_Steelope</race>
+		<lifeStages>
+			<li>
+				<label>steelope calf</label>
+				<labelPlural>steelope calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Animal/Steelope</texPath>
+					<drawSize>1.0</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>1.0</drawSize>
+				</corpseGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Steelope</texPath>
+					<drawSize>1.6</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>1.5</drawSize>
+				</corpseGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Steelope</texPath>
+					<drawSize>2.2</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>2.0</drawSize>
+				</corpseGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<!-- Uranilope -->
+	<ThingDef ParentName="dtf_LopeBase">
+		<defName>dtf_Uranilope</defName>
+		<label>uranilope</label>
+		<description>Engineered for chemicals production, the uranilope grows a large sac of volatile chemicals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce uranium - very carefully.</description>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Uranium</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>8</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="dtf_LopeBaseKind">
+		<defName>dtf_Uranilope</defName>
+		<label>uranilope</label>
+		<race>dtf_Uranilope</race>
+		<lifeStages>
+			<li>
+				<label>uranilope calf</label>
+				<labelPlural>uranilope calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Animal/Uranilope</texPath>
+					<drawSize>1.0</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>1.0</drawSize>
+				</corpseGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Uranilope</texPath>
+					<drawSize>1.6</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+					<texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+					<drawSize>1.5</drawSize>
+				</corpseGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Uranilope</texPath>
 					<drawSize>2.2</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Boomalope"]/race</xpath>
+		<value>
+			<canCrossBreedWith>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Toxalope</li>
+				<li>dtf_Ambrolope</li>
+				<li>dtf_Goldilope</li>
+				<li>dtf_Hyperlope</li>
+				<li>dtf_Jadalope</li>
+				<li>dtf_Neutrolope</li>
+				<li>dtf_Luciferilope</li>
+				<li>dtf_Plasteelope</li>
+				<li>dtf_Steelope</li>
+				<li>dtf_Uranilope</li>
+				<li>dtf_Woodalope</li>
+			</canCrossBreedWith>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RaceDef[defName="Toxalope"]/race</xpath>
+			<value>
+				<canCrossBreedWith>
+					<li>Boomalope</li>
+					<li>dtf_Ambrolope</li>
+					<li>dtf_Goldilope</li>
+					<li>dtf_Hyperlope</li>
+					<li>dtf_Jadalope</li>
+					<li>dtf_Neutrolope</li>
+					<li>dtf_Luciferilope</li>
+					<li>dtf_Plasteelope</li>
+					<li>dtf_Steelope</li>
+					<li>dtf_Uranilope</li>
+					<li>dtf_Woodalope</li>
+				</canCrossBreedWith>
+			</value>
+		</match>
+	</Operation>
+</Patch>
